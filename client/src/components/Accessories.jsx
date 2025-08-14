@@ -9,7 +9,7 @@ function Accessories({ cart, setCart }) {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`http://localhost:5000/api/products/accessories?page=${page}&limit=50`)
+    fetch(`http://localhost:https://draipe-backend.onrender.com/api/products/accessories?page=${page}&limit=50`)
       .then(res => res.json())
       .then(data => {
         setAccessoriesProducts(data.products);

@@ -10,7 +10,7 @@ function Women({ cart, setCart }) {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`http://localhost:5000/api/products/women?page=${page}&limit=50`)
+    fetch(`http://localhost:https://draipe-backend.onrender.com/api/products/women?page=${page}&limit=50`)
       .then(res => res.json())
       .then(data => {
         setWomenProducts(data.products);
